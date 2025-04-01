@@ -2,7 +2,10 @@
 
 ### **Objetivo**
 
-Este aplicativo tem como objetivo facilitar o gerenciamento de pedidos de peças dentro de uma assistência técnica. Ele permitirá que os funcionários realizem solicitações de peças, enquanto os gerentes poderão visualizar, aprovar ou rejeitar os pedidos. Além disso, o sistema acompanhará o status de cada solicitação, garantindo mais controle e organização no fluxo de trabalho.
+Este aplicativo tem como objetivo facilitar o gerenciamento de pedidos de peças dentro de uma assistência técnica. Ele
+permitirá que os funcionários realizem solicitações de peças, enquanto os gerentes poderão visualizar, aprovar ou
+rejeitar os pedidos. Além disso, o sistema acompanhará o status de cada solicitação, garantindo mais controle e
+organização no fluxo de trabalho.
 
 nome da aplicação: TechFast
 
@@ -10,7 +13,8 @@ nome da aplicação: TechFast
 
 O sistema será utilizado por dois tipos de usuários:
 
-- **Gerentes:** Responsáveis por aprovar ou rejeitar os pedidos, além de monitorar o estoque e as solicitações pendentes.
+- **Gerentes:** Responsáveis por aprovar ou rejeitar os pedidos, além de monitorar o estoque e as solicitações
+  pendentes.
 - **Funcionários:** Poderão registrar solicitações de peças e acompanhar o status de seus pedidos.
 
 ### **Tecnologias Utilizadas**
@@ -34,7 +38,8 @@ O sistema deve permitir:
 - Exibição de todos os pedidos em uma tabela, destacando:
     - Pedidos **aceitos**.
     - Pedidos **pendentes de visualização**.
-- Abertura de um pedido para análise, onde ele poderá ser **aceito ou negado** (**ação permitida apenas para gerentes**).
+- Abertura de um pedido para análise, onde ele poderá ser **aceito ou negado** (**ação permitida apenas para gerentes
+  **).
 - **Autenticação de usuários** (login com controle de acesso baseado no nível do usuário).
 
 ### **Requisitos Não Funcionais**
@@ -63,7 +68,8 @@ O sistema deve permitir:
 
 ### **Modelo Arquitetural**
 
-O sistema seguirá o padrão **MVC (Model-View-Controller)** para garantir organização, manutenibilidade e separação de responsabilidades:
+O sistema seguirá o padrão **MVC (Model-View-Controller)** para garantir organização, manutenibilidade e separação de
+responsabilidades:
 
 - **Model (Modelo):** Gerencia os dados e a lógica de negócios (ex.: classes para Pedido, Usuário, Banco de Dados).
 - **View (Visão):** Responsável pela interface gráfica, utilizando JavaFX para exibição das telas.
@@ -106,7 +112,8 @@ O sistema seguirá o padrão **MVC (Model-View-Controller)** para garantir organ
 
 ### **Estilo Visual**
 
-A interface será projetada para ser **moderna, agradável e intuitiva**, utilizando um design **limpo e atualizado**. As cores predominantes serão:
+A interface será projetada para ser **moderna, agradável e intuitiva**, utilizando um design **limpo e atualizado**. As
+cores predominantes serão:
 
 - **Branco**: Fundo principal para uma aparência clara e profissional.
 - **Laranja**: Destaques, botões e elementos interativos para chamar a atenção.
@@ -168,23 +175,25 @@ A interface será projetada para ser **moderna, agradável e intuitiva**, utiliz
 
 ### **Cronograma de Desenvolvimento**
 
-| **Fase** | **Duração Estimada** | **Data de Início** | **Data de Término** |
-| --- | --- | --- | --- |
-| Planejamento e Estruturação | 1 semana | 01/04/2025 | 07/04/2025 |
-| Desenvolvimento da UI | 2 semanas | 08/04/2025 | 21/04/2025 |
-| Lógica de Negócios e Integração | 3 semanas | 22/04/2025 | 12/05/2025 |
-| Testes e Ajustes | 2 semanas | 13/05/2025 | 26/05/2025 |
-| Documentação e Deploy | 1 semana | 27/05/2025 | 02/06/2025 |
+| **Fase**                        | **Duração Estimada** | **Data de Início** | **Data de Término** |
+|---------------------------------|----------------------|--------------------|---------------------|
+| Planejamento e Estruturação     | 1 semana             | 01/04/2025         | 07/04/2025          |
+| Desenvolvimento da UI           | 2 semanas            | 08/04/2025         | 21/04/2025          |
+| Lógica de Negócios e Integração | 3 semanas            | 22/04/2025         | 12/05/2025          |
+| Testes e Ajustes                | 2 semanas            | 13/05/2025         | 26/05/2025          |
+| Documentação e Deploy           | 1 semana             | 27/05/2025         | 02/06/2025          |
 
 ### 6. **Gestão de Projetos**
 
 ### **Estrutura de Equipe**
 
-Como o desenvolvimento será realizado individualmente, serei responsável por todas as fases do projeto, incluindo o desenvolvimento, testes e acompanhamento do progresso.
+Como o desenvolvimento será realizado individualmente, serei responsável por todas as fases do projeto, incluindo o
+desenvolvimento, testes e acompanhamento do progresso.
 
 ### **Metodologia de Desenvolvimento**
 
-A metodologia de gestão adotada será **Kanban**, focada em gerenciar as tarefas de forma visual e eficiente. O Kanban ajudará a organizar o fluxo de trabalho, dividindo as tarefas em colunas como:
+A metodologia de gestão adotada será **Kanban**, focada em gerenciar as tarefas de forma visual e eficiente. O Kanban
+ajudará a organizar o fluxo de trabalho, dividindo as tarefas em colunas como:
 
 - **Backlog**: Tarefas que ainda precisam ser feitas.
 - **Em Andamento**: Tarefas que estão sendo desenvolvidas no momento.
@@ -192,15 +201,19 @@ A metodologia de gestão adotada será **Kanban**, focada em gerenciar as tarefa
 
 ### **Ferramentas de Gestão**
 
-- **Notion**: Usado para gestão de tarefas, controle de progresso e organização de anotações do projeto. O Notion será configurado com um quadro Kanban para gerenciar as tarefas de forma simples e clara.
-- **GitHub**: Controle de versão do código-fonte, onde os commits serão realizados regularmente para manter o progresso do código documentado.
+- **Notion**: Usado para gestão de tarefas, controle de progresso e organização de anotações do projeto. O Notion será
+  configurado com um quadro Kanban para gerenciar as tarefas de forma simples e clara.
+- **GitHub**: Controle de versão do código-fonte, onde os commits serão realizados regularmente para manter o progresso
+  do código documentado.
 
 ### **Monitoramento de Progresso**
 
 O progresso será acompanhado através das seguintes práticas:
 
-- **Revisão Semanal**: A cada semana, revisar as tarefas concluídas e ajustar as prioridades de acordo com o andamento do projeto.
-- **Kanban no Notion**: O quadro de tarefas será atualizado continuamente, permitindo uma visão clara das atividades pendentes, em andamento e finalizadas.
+- **Revisão Semanal**: A cada semana, revisar as tarefas concluídas e ajustar as prioridades de acordo com o andamento
+  do projeto.
+- **Kanban no Notion**: O quadro de tarefas será atualizado continuamente, permitindo uma visão clara das atividades
+  pendentes, em andamento e finalizadas.
 
 ### **Gestão de Riscos**
 
@@ -215,51 +228,70 @@ Identificação e mitigação de riscos durante o projeto:
 
 ### **Entrega e Acompanhamento Pós-Lançamento**
 
-Após a entrega do sistema, Gabriel realizará um acompanhamento contínuo durante **1 mês** para monitorar o desempenho e coletar feedback. Durante este período, o foco será corrigir possíveis falhas e planejar melhorias.
+Após a entrega do sistema, Gabriel realizará um acompanhamento contínuo durante **1 mês** para monitorar o desempenho e
+coletar feedback. Durante este período, o foco será corrigir possíveis falhas e planejar melhorias.
 
 ### 7. **Testes**
 
 ### **Objetivo dos Testes**
 
-O objetivo principal dos testes é garantir que o sistema funcione corretamente, sem erros, e que a experiência do usuário seja satisfatória. Também é importante verificar se a lógica de negócios está bem implementada e se a interação com o banco de dados está ocorrendo conforme esperado.
+O objetivo principal dos testes é garantir que o sistema funcione corretamente, sem erros, e que a experiência do
+usuário seja satisfatória. Também é importante verificar se a lógica de negócios está bem implementada e se a interação
+com o banco de dados está ocorrendo conforme esperado.
 
 ### **Tipos de Testes**
 
 1. **Testes Unitários**
-    - **Objetivo**: Testar individualmente as funções e métodos do sistema para garantir que cada parte do código execute corretamente.
+    - **Objetivo**: Testar individualmente as funções e métodos do sistema para garantir que cada parte do código
+      execute corretamente.
     - **Ferramenta**: JUnit (para Java).
-    - **Cobertura**: Testar funcionalidades críticas como cadastro de pedidos, login de usuários e manipulação de dados no banco de dados SQLite.
+    - **Cobertura**: Testar funcionalidades críticas como cadastro de pedidos, login de usuários e manipulação de dados
+      no banco de dados SQLite.
 2. **Testes de Integração**
-    - **Objetivo**: Verificar se as diferentes partes do sistema (interface, banco de dados e lógica de negócios) funcionam corretamente quando integradas.
-    - **Exemplo**: Testar se a inserção de pedidos na interface está sendo corretamente armazenada no banco de dados e se a consulta de pedidos exibe as informações corretamente.
+    - **Objetivo**: Verificar se as diferentes partes do sistema (interface, banco de dados e lógica de negócios)
+      funcionam corretamente quando integradas.
+    - **Exemplo**: Testar se a inserção de pedidos na interface está sendo corretamente armazenada no banco de dados e
+      se a consulta de pedidos exibe as informações corretamente.
 3. **Testes Funcionais**
-    - **Objetivo**: Validar se o sistema atende aos requisitos funcionais descritos, como registro de usuários, criação de pedidos e aprovação de pedidos pelos gerentes.
-    - **Ferramenta**: Manual, ou ferramentas de automação de testes como Selenium (se for necessário realizar testes em uma interface mais complexa).
-    - **Cobertura**: Testar os fluxos principais da aplicação, como login, criação de pedidos, e aprovação de pedidos por gerentes.
+    - **Objetivo**: Validar se o sistema atende aos requisitos funcionais descritos, como registro de usuários, criação
+      de pedidos e aprovação de pedidos pelos gerentes.
+    - **Ferramenta**: Manual, ou ferramentas de automação de testes como Selenium (se for necessário realizar testes em
+      uma interface mais complexa).
+    - **Cobertura**: Testar os fluxos principais da aplicação, como login, criação de pedidos, e aprovação de pedidos
+      por gerentes.
 4. **Testes de Usabilidade**
-    - **Objetivo**: Verificar se a interface do usuário é intuitiva e agradável, com o objetivo de proporcionar uma boa experiência ao usuário.
+    - **Objetivo**: Verificar se a interface do usuário é intuitiva e agradável, com o objetivo de proporcionar uma boa
+      experiência ao usuário.
     - **Método**: Testes manuais com feedback de usuários reais ou simulação de uso.
-    - **Cobertura**: Testar o fluxo de navegação entre telas, clareza nos botões e elementos da interface, e tempo de resposta das ações.
+    - **Cobertura**: Testar o fluxo de navegação entre telas, clareza nos botões e elementos da interface, e tempo de
+      resposta das ações.
 5. **Testes de Performance**
-    - **Objetivo**: Verificar se o sistema funciona de maneira eficiente, mesmo quando há maior carga de dados ou simultaneidade de usuários.
+    - **Objetivo**: Verificar se o sistema funciona de maneira eficiente, mesmo quando há maior carga de dados ou
+      simultaneidade de usuários.
     - **Ferramenta**: JMeter ou ferramentas de monitoramento de performance.
-    - **Cobertura**: Testar o desempenho de consultas ao banco de dados, tempo de resposta do sistema e carregamento das telas.
+    - **Cobertura**: Testar o desempenho de consultas ao banco de dados, tempo de resposta do sistema e carregamento das
+      telas.
 
 ### **Plano de Testes**
 
 1. **Fase Inicial**:
-    - Realizar testes unitários e de integração à medida que o código for sendo desenvolvido, para garantir que cada parte do sistema esteja funcionando corretamente.
+    - Realizar testes unitários e de integração à medida que o código for sendo desenvolvido, para garantir que cada
+      parte do sistema esteja funcionando corretamente.
 2. **Fase de Validação**:
-    - Realizar testes funcionais para validar se os requisitos do sistema estão sendo atendidos e se o sistema como um todo está funcionando corretamente.
+    - Realizar testes funcionais para validar se os requisitos do sistema estão sendo atendidos e se o sistema como um
+      todo está funcionando corretamente.
 3. **Fase de Usabilidade**:
-    - Realizar testes de usabilidade com a interface final, realizando ajustes conforme necessário para garantir uma boa experiência ao usuário.
+    - Realizar testes de usabilidade com a interface final, realizando ajustes conforme necessário para garantir uma boa
+      experiência ao usuário.
 4. **Fase Final**:
     - Realizar testes de performance para garantir que o sistema seja eficiente e estável antes do lançamento final.
 
 ### **Gerenciamento de Testes**
 
-Durante o desenvolvimento, todos os testes realizados serão registrados e documentados no Notion, permitindo o acompanhamento de quais testes foram feitos, quais estão pendentes e os resultados dos testes realizados.
+Durante o desenvolvimento, todos os testes realizados serão registrados e documentados no Notion, permitindo o
+acompanhamento de quais testes foram feitos, quais estão pendentes e os resultados dos testes realizados.
 
 ### **Acompanhamento de Erros e Correções**
 
-Caso algum erro seja identificado durante os testes, ele será registrado como uma tarefa no quadro Kanban do Notion, com uma descrição do erro e prioridade para correção.
+Caso algum erro seja identificado durante os testes, ele será registrado como uma tarefa no quadro Kanban do Notion, com
+uma descrição do erro e prioridade para correção.
