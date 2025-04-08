@@ -1,0 +1,29 @@
+/* Estilo para campos de texto com apenas borda inferior */
+.text-field, .password-field {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent transparent #FEBC42 transparent; /* linha laranja suave */
+    -fx-border-width: 0 0 2px 0;
+    -fx-padding: 5 0 5 0;
+    -fx-font-size: 14px;
+    -fx-text-fill: #333;
+    -fx-prompt-text-fill: #888;
+    -fx-focus-color: #FFA000; /* Cor quando selecionado */
+    -fx-faint-focus-color: transparent;
+}
+
+/* Quando o campo está focado, a borda de baixo muda de cor */
+.text-field:focused, .password-field:focused {
+    -fx-border-color: transparent transparent #FFA000 transparent;
+}
+
+/* Estilo dos botões para combinar */
+.button {
+    -fx-background-color: #FFB74D;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #fea50c;
+}
