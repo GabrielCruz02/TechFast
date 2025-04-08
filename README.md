@@ -291,6 +291,70 @@ com o banco de dados está ocorrendo conforme esperado.
 Durante o desenvolvimento, todos os testes realizados serão registrados e documentados no Notion, permitindo o
 acompanhamento de quais testes foram feitos, quais estão pendentes e os resultados dos testes realizados.
 
+-------------------------------------------------------------------------------------------------------------------------
+
+### **Banco de dados**
+
+📌 **Estrutura da Tabela `funcionario`**:
+
+```sql
+CREATE TABLE funcionario (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    nome VARCHAR(20) NOT NULL,
+    cargo VARCHAR(20) CHECK (cargo IN ('Funcionário', 'Gerente')) NOT NULL,
+    usuario VARCHAR(50) UNIQUE NOT NULL,
+    senha VARCHAR(50) NOT NULL
+);
+```
+
+- “id” chave primaria, tipo inteiro, autoincremetavel.
+- “nome” nome do funcionario.
+- “cargo”  armazenado como um **ENUM** para evitar valores inconsistentes.
+- “usuario” utilizado para login.
+- “senha” guardar hashes de senhas.
+
+📌  **Estrutura da Tabela `pedidos:`**
+
+```sql
+CREATE TABLE pedidos (
+id INTEGER PRIMARY KEY AUTO_INCREMENT,
+ordem_servico TEXT UNIQUE NOT NULL,
+nome_peca TEXT NOT NULL,
+valor_reparo REAL NOT NULL,
+status VARCHAR(20) CHECK(status IN ('Pendente', 'Aprovado', 'Negado')) DEFAULT 'Pendente',
+data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+funcionario_id INTEGER NOT NULL,
+FOREIGN KEY (funcionario_id) REFERENCES funcionario(id)
+);
+```
+
+- “id” chave primaria, tipo inteiro, autoincremetavel.
+- “ordem_servico” identificador unico.
+- “nome_peca” nome da peca solicitada no pedido.
+- “valor_reparo” valor do reparo completo do equipamento que receberá a peça.
+- “status” Status do pedido armazenado como um **ENUM** para evitar valores inconsistentes.
+- campo de **data de criação** para registrar quando o pedido foi feito.
+- ”funcionario_id “ Relaciono o pedido ao funcionário que o criou atraves da chave estrangeira “funcionario_id” que fara referencia ao “funcionario_id” chave primaria da tabela funcionario.
+
+📌 **Estrutura da Tabela `log`**:
+
+```sql
+CREATE TABLE log_atividades (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    funcionario_id INTEGER NOT NULL,
+    acao VARCHAR(50) NOT NULL,
+    data TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (funcionario_id) REFERENCES funcionario(id)
+);
+```
+
+**Uso:** Pode armazenar ações como `"Pedido #123 aprovado por Gerente João"`.
+
+
+
+
+
+
 ### **Acompanhamento de Erros e Correções**
 
 Caso algum erro seja identificado durante os testes, ele será registrado como uma tarefa no quadro Kanban do Notion, com
