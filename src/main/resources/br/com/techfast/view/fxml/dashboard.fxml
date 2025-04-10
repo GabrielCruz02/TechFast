@@ -1,14 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="br.com.techfast.view.Dashboard"
-            prefHeight="400.0" prefWidth="600.0">
-
-</AnchorPane>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" stylesheets="@../../../../../styles/dashboard.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <top>
+            <AnchorPane prefHeight="150.0" prefWidth="1030.0" style="-fx-background-color: #febc42;" BorderPane.alignment="CENTER">
+               <children>
+                  <Text layoutX="446.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pedidos">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="600.0" prefWidth="1030.0" style="-fx-background-color: #ffffe4;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button layoutX="14.0" layoutY="33.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="32.0" />
+                  <TextField layoutX="54.0" layoutY="32.0" prefHeight="32.0" prefWidth="252.0" promptText="Pesquisar por ordem de serviço" />
+                  <Button layoutX="816.0" layoutY="33.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="200.0" text="Adicionar novo pedido" />
+                  <TableView layoutX="14.0" layoutY="82.0" prefHeight="478.0" prefWidth="1003.0" style="-fx-background-color: #ffffe4;" stylesheets="@../../../../../styles/dashboard.css">
+                     <columns>
+                        <TableColumn fx:id="colOrdem" prefWidth="150" text="Ordem de Serviço" />
+                        <TableColumn fx:id="colPeca" prefWidth="150" text="Nome da Peça" />
+                        <TableColumn fx:id="colValor" prefWidth="130" text="Valor do Reparo" />
+                        <TableColumn fx:id="colStatus" prefWidth="120" text="Status" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </center>
+   <left>
+      <BorderPane prefHeight="720.0" prefWidth="250.0" BorderPane.alignment="CENTER">
+         <top>
+            <AnchorPane prefHeight="100.0" prefWidth="250.0" style="-fx-background-color: #fea50c;" BorderPane.alignment="CENTER">
+               <children>
+                  <Text layoutX="56.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TechFast">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="660.0" prefWidth="300.0" style="-fx-background-color: #ffd278;" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </left>
+</BorderPane>

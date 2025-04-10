@@ -27,3 +27,12 @@
 .button:hover {
     -fx-background-color: #fea50c;
 }
+
+.table-view .column-header-background {
+    -fx-background-color: #ffbb4d; /* Cor de fundo do cabeçalho */
+}
+
+.table-view .column-header, .table-view .label {
+    -fx-text-fill: black;          /* Cor do texto do cabeçalho */
+    -fx-font-weight: bold;
+}
