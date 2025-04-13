@@ -4,6 +4,8 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
@@ -13,11 +15,11 @@
    <center>
       <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <top>
-            <AnchorPane prefHeight="150.0" prefWidth="1030.0" style="-fx-background-color: #febc42;" BorderPane.alignment="CENTER">
+            <AnchorPane prefHeight="100.0" prefWidth="1030.0" style="-fx-background-color: #febc42;" BorderPane.alignment="CENTER">
                <children>
-                  <Text layoutX="446.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pedidos">
+                  <Text id="lblPrincipal" fx:id="lblPrincipal" layoutX="445.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pedidos">
                      <font>
-                        <Font size="36.0" />
+                        <Font name="SansSerif Bold" size="36.0" />
                      </font>
                   </Text>
                </children>
@@ -26,9 +28,23 @@
          <center>
             <AnchorPane prefHeight="600.0" prefWidth="1030.0" style="-fx-background-color: #ffffe4;" BorderPane.alignment="CENTER">
                <children>
-                  <Button layoutX="14.0" layoutY="33.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="32.0" />
-                  <TextField layoutX="54.0" layoutY="32.0" prefHeight="32.0" prefWidth="252.0" promptText="Pesquisar por ordem de serviço" />
-                  <Button layoutX="816.0" layoutY="33.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="200.0" text="Adicionar novo pedido" />
+                  <Button id="btnPesquisar" fx:id="btnPesquisar" layoutX="14.0" layoutY="33.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="32.0">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../image/search.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <TextField id="txtPesquisar" fx:id="txtPesquisar" layoutX="54.0" layoutY="32.0" prefHeight="32.0" prefWidth="252.0" promptText="Pesquisar por ordem de serviço" />
+                  <Button id="btnAddPedido" fx:id="btnAddPedido" layoutX="816.0" layoutY="33.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="200.0" text="Adicionar novo pedido">
+                     <graphic>
+                        <ImageView fitHeight="70.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../image/add.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
                   <TableView layoutX="14.0" layoutY="82.0" prefHeight="478.0" prefWidth="1003.0" style="-fx-background-color: #ffffe4;" stylesheets="@../../../../../styles/dashboard.css">
                      <columns>
                         <TableColumn fx:id="colOrdem" prefWidth="150" text="Ordem de Serviço" />
@@ -37,6 +53,24 @@
                         <TableColumn fx:id="colStatus" prefWidth="120" text="Status" />
                      </columns>
                   </TableView>
+                  <Button id="btnRejeitar" fx:id="btnRejeitar" layoutX="602.0" layoutY="33.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #9d161d;" text="Rejeitar">
+                     <graphic>
+                        <ImageView fitHeight="70.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../image/cross.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button id="btnAprovar" fx:id="btnAprovar" layoutX="488.0" layoutY="33.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #89b130;" text="Aprovar">
+                     <graphic>
+                        <ImageView fitHeight="70.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../image/check.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
                </children>
             </AnchorPane>
          </center>
@@ -49,14 +83,36 @@
                <children>
                   <Text layoutX="56.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TechFast">
                      <font>
-                        <Font size="36.0" />
+                        <Font name="SansSerif Bold Italic" size="36.0" />
                      </font>
                   </Text>
                </children>
             </AnchorPane>
          </top>
          <center>
-            <AnchorPane prefHeight="660.0" prefWidth="300.0" style="-fx-background-color: #ffd278;" BorderPane.alignment="CENTER" />
+            <AnchorPane prefHeight="200.0" prefWidth="250.0" style="-fx-background-color: #ffd278;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button id="btnDashboard" fx:id="btnDashboard" layoutX="25.0" layoutY="66.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="200.0" text="Dashboard">
+                     <graphic>
+                        <ImageView fitHeight="70.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../image/edit%20(1).png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button id="btnUsuarios" fx:id="btnUsuarios" layoutX="25.0" layoutY="125.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="200.0" text="Gerenciar usuarios">
+                     <graphic>
+                        <ImageView fitHeight="70.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../image/users.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button id="btnSair" fx:id="btnSair" layoutX="14.0" layoutY="576.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="60.0" text="Sair" />
+               </children>
+            </AnchorPane>
          </center>
       </BorderPane>
    </left>
