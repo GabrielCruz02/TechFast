@@ -1,6 +1,7 @@
 module br.com.techfast.techfast {
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.sql;
 
 
     exports br.com.techfast;
